@@ -1,0 +1,1 @@
+all the functions implemented are asynchronous functions because for the fetch api makes the calls asynchronously, as well as the other two, when using async and await, and observable operators
