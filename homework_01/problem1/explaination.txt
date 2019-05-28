@@ -1,0 +1,2 @@
+The function we just wrote will affect the event loop because it's executed asynchronously which means when until the promise object is fulfilled,
+it will add it's callback to the callback queue so when the stack is empty, it will call this callback from the queue and put it in the stack
