@@ -1,6 +1,5 @@
 /*
-*** I noticed that both readFile and readFileSync reads the file in the same speed, while when using streams, it's slower because
-it reads the file and convert it to a stream
+*** I noticed that both readFile and readFileSync have the
 */
 const fs = require('fs');
 const url = require('url'); 

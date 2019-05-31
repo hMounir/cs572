@@ -1,0 +1,13 @@
+1. Explain why do we want sometimes to use setImmediate instead of using setTimeout?
+-> Supposes, event loop is picking up the function from I/O queue. 
+Then new function (f) is registered into "check" queue by setImmediate.
+Another function (f2) is  registered into "timer" queue by setTimeout.
+Then the function (f) in "check" queue will be picked to push into V8 to execute.
+
+2. Explain the difference between process.nextTick and setImmediate?
+-> process.nextTick(f) will register function f into Priority queue which has the highest priority. The task in priority queue
+will be picked first to push into V8 to execute.
+Even though, at that time there remains tasks in other queues. 
+
+3. Name 10 core modules that Node provides by default.
+-> http, url, queryString, path, fs, util, v8, buffer, stream, events 
