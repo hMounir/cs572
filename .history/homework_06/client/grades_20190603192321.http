@@ -1,0 +1,15 @@
+GET http://localhost:3000/grades/
+
+#############
+
+POST http://localhost:3000/grades/
+content-type: application/json
+
+{ "id": 1, 
+  "name": "Hisham Mohammed", 
+  "course":"CS572", 
+  "grade": 100
+}
+
+#############
+GET http://localhost:3000/grades/1

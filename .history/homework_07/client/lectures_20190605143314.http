@@ -1,0 +1,16 @@
+GET http://localhost:3000/lectures/
+
+#############
+
+POST http://localhost:3000/lectures/
+content-type: application/json
+
+{ "course": "{name:'MWA',id:'CS572'}", "address": "FairField" }
+
+#############
+GET http://localhost:3000/lectures/1
+
+#############
+DELETE http://localhost:3000/lectures
+
+{ "course": "{name:'MWA',id:'CS572'}", "address": "FairField" }
