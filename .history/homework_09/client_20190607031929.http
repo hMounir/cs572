@@ -1,0 +1,10 @@
+GET http://localhost:3000/query1
+
+
+##########
+
+GET http://localhost:3000/query2
+
+##########
+
+GET http://localhost:3000/query3

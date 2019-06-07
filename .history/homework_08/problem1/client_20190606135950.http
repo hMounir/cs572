@@ -1,0 +1,13 @@
+GET http://localhost:3000/restaurant/getAll
+
+###
+
+GET http://localhost:3000/restaurant/getSpecificFieldsExceptId1
+
+###
+
+GET http://localhost:3000/restaurant/getSpecificFieldsExceptId2
+
+####
+
+GET http://localhost:3000/restaurant/getAllSpecificFieldsExceptId3

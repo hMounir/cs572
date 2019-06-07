@@ -1,0 +1,63 @@
+GET http://localhost:3000/restaurant/getAll
+
+###
+
+GET http://localhost:3000/restaurant/getAllSpecificFields1
+
+###
+
+GET http://localhost:3000/restaurant/getAllSpecificFields2
+
+####
+
+GET http://localhost:3000/restaurant/getAllSpecificFields3
+
+####
+
+GET http://localhost:3000/restaurant/getAllSpecificFields4
+
+###
+
+GET http://localhost:3000/restaurant/getAllSpecificFields5
+
+
+####
+
+GET http://localhost:3000/restaurant/getAllSpecificFields6
+
+
+###
+
+GET http://localhost:3000/restaurant/getAllSpecificFields7
+
+#####
+
+GET http://localhost:3000/restaurant/getAllSpecificFields8
+
+####
+
+GET http://localhost:3000/restaurant/getAllSpecificFields9
+
+####
+
+GET http://localhost:3000/restaurant/getAllSpecificFields10
+
+####
+
+GET http://localhost:3000/restaurant/getAllSpecificField11
+
+####
+
+GET http://localhost:3000/restaurant/getAllSpecificFields12
+
+####
+
+GET http://localhost:3000/restaurant/getAllSpecificFields13
+
+####
+
+GET http://localhost:3000/restaurant/getAllSpecificFields14
+
+####
+
+GET http://localhost:3000/restaurant/getAllSpecificFields15
