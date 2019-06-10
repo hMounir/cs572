@@ -48,6 +48,7 @@ router.delete('/', async function(req, res) {
 });
 
 router.get('/search/:q',async(req,res)=>{
+  console.log('sdsd');
   const result = await req.db.find({'lecture':{'$regex':req.params.q}}).toArray();
   res.json(result);
 });

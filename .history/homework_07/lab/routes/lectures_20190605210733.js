@@ -47,9 +47,4 @@ router.delete('/', async function(req, res) {
   });
 });
 
-router.get('/search/:q',async(req,res)=>{
-  const result = await req.db.find({'lecture':{'$regex':req.params.q}}).toArray();
-  res.json(result);
-});
-
 module.exports = router;
