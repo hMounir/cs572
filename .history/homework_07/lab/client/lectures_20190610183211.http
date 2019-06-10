@@ -1,0 +1,39 @@
+GET http://localhost:3000/lectures
+
+###
+
+GET http://localhost:3000/lectures/5cf8756ea4006d5eb80f1a9d
+
+
+###
+POST http://localhost:3000/lectures
+content-type: application/json
+
+{
+    "lecture" : "mongodb new",
+    "course" : "CS572"
+}
+
+###
+
+PUT http://localhost:3000/lectures
+content-type: application/json
+
+{
+      "_id": "5cfee872a813073d707832c4",
+      "lecture": "mongodb updated 2",
+      "course": "CS572"
+    }
+
+###
+
+DELETE http://localhost:3000/lectures
+content-type: application/json
+
+{
+    "course" : "CS572"
+}
+
+#############
+
+GET http://localhost:3000/lectures/search/t
