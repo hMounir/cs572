@@ -8,7 +8,7 @@ function databaseLecture(req) {
   
 // A GET to the root of a resource returns a list of that resource
 router.get('/', async function(req, res) {
-const doc = await databaseLecture(req).find({}).toArray(function(err, docArray) { 
+const doc = let result = await databaseLecture(req).find({}).toArray(function(err, docArray) { 
     res.json({message : "saved", data : docArray}); 
 });
 });

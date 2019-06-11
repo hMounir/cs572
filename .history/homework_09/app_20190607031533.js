@@ -17,7 +17,7 @@ app.get('/', (req, res) => res.send('Hello App!'))
 
 //1- 
 app.get('/query1', async function(req, res) {
-  await databaseLecture(req)
+  let result = await databaseLecture(req)
   .aggregate([
     {$match :{state:'WA'}},
     {$group: { _id: {state:"$state",city:"$city"},population:{$sum:'$pop'}}}
@@ -29,7 +29,7 @@ app.get('/query1', async function(req, res) {
 
 //2- 
 app.get('/query2', async function(req, res) {
-  await databaseLecture(req)
+  let result = await databaseLecture(req)
   .aggregate([
     {$match :{pop:{$lt:5000}}},
     {$group: { _id: {state:"$state",city:"$city"},population:{$sum:'$pop'}}}
@@ -41,7 +41,7 @@ app.get('/query2', async function(req, res) {
 
 //3- 
 app.get('/query2', async function(req, res) {
-  await databaseLecture(req)
+  let result = await databaseLecture(req)
   .aggregate([
     {$match :{pop:{$lt:5000}}},
     {$group: { _id: {state:"$state",city:"$city"},population:{$sum:'$pop'}}}

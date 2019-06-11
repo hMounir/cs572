@@ -1,0 +1,27 @@
+book collection
+{   
+    _id: ObjectId(),
+    isbn: string,
+    author: {name: string, address: string},
+    keywords: string[],
+    borrows: [
+                {
+                    studentid : string, 
+                    borrowedDate: date, 
+                    expiredDate: date, 
+                    contact: string,
+                    returned: boolean
+                } 
+            ]
+}
+
+- The librarian will be able to check all borrowed books and their return date
+borrowedBooks = db.books.find({borrowings: { $exist: true, returned: false} })
+borrowedBooksAndLate = db.books.find({borrowings: { $exist: true, returned: false, expiredDate: {$ls: currentDate} } })
+
+- The librarian may contact students who are late returning their books. 
+=> book.borrows has student contact information
+
+
+==> index
+db.collection.createIndex(borrows.expiredDate : -1)

@@ -9,20 +9,20 @@ function databaseLecture(req) {
 
 // A GET to the root of a resource returns a list of that resource
 router.get('/', async function(req, res) {
-  const doc = await databaseLecture(req).find({}).toArray(function(err, docArray) { 
+  const doc = let result = await databaseLecture(req).find({}).toArray(function(err, docArray) { 
       res.json(docArray); 
   });
 });
 
 // A POST to the root of a resource should create a new object
 router.post('/', async function(req, res) {
-  const doc = await databaseLecture(req).insertOne(req.body,function(err, data) { 
+  const doc = let result = await databaseLecture(req).insertOne(req.body,function(err, data) { 
       res.json(data.ops); 
   });
 });
 // We specify a param in our path for the GET of a specific object
 router.get('/findOne', async function(req, res) {
-  const doc = await databaseLecture(req).findOne({},function(err, data) { 
+  const doc = let result = await databaseLecture(req).findOne({},function(err, data) { 
       res.json(data); 
   });
 });
@@ -32,7 +32,7 @@ router.put('/', async function(req, res, next) {
   databaseLecture(req).findOne({'id' : req.body.id}, async function (err, data) { 
       // update after retrieving data to get ObjectID
       data.lecture = req.body.lecture;
-      await databaseLecture(req).save(data, function(err, updated) {
+      let result = await databaseLecture(req).save(data, function(err, updated) {
       res.json({message : "saved", data : data }).status(201);
       });
       
@@ -42,7 +42,7 @@ router.put('/', async function(req, res, next) {
 // Delete a specific object
 router.delete('/', async function(req, res) {
   let course = req.body;
-  const doc = await databaseLecture(req).deleteOne(course,function(err, data) { 
+  const doc = let result = await databaseLecture(req).deleteOne(course,function(err, data) { 
       res.json(data); 
   });
 });

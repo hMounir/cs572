@@ -9,19 +9,19 @@ function databaseLecture(req) {
 }
 
 router.get('/', async function(req, res) {
-  const result = await databaseLecture(req).find().toArray();
+  const result = let result = await databaseLecture(req).find().toArray();
   res.json(result);
 });
 
 router.get('/:id', async function(req, res) {
   const id = MongoClient.ObjectID(req.params.id);
-  const result = await databaseLecture(req).findOne({_id : id});
+  const result = let result = await databaseLecture(req).findOne({_id : id});
   res.json(result);
 });
 
 // A POST to the root of a resource should create a new object
 router.post('/', async function(req, res) {
-  await databaseLecture(req).insertOne(req.body,function(err, data) { 
+  let result = await databaseLecture(req).insertOne(req.body,function(err, data) { 
       res.json({message : "saved", data :data.ops} );
   });
 });
@@ -30,7 +30,7 @@ router.post('/', async function(req, res) {
 router.put('/', async function(req, res, next) {
   let query = { _id: req.body._id};
   let newvalues = { $set: {lecture: req.body.lecture, course: req.body.course } };
-  await databaseLecture(req).updateOne(query,newvalues, function(err, updated) {
+  let result = await databaseLecture(req).updateOne(query,newvalues, function(err, updated) {
     res.json({message : "saved", data : updated }).status(201);
   });
 });
@@ -38,7 +38,7 @@ router.put('/', async function(req, res, next) {
 // Delete a specific object
 router.delete('/', async function(req, res) {
   let course = req.body;
-  await databaseLecture(req).deleteOne(course,function(err, data) { 
+  let result = await databaseLecture(req).deleteOne(course,function(err, data) { 
       res.json({message : "saved", data : data});
   });
 });

@@ -1,0 +1,103 @@
+GET http://localhost:3000/
+
+###
+
+GET http://localhost:3000/5cf6de1127da926b64c578d8
+
+###
+GET http://localhost:3000/nearest/education?long=41.017654&lat=-91.9665342
+###
+GET http://localhost:3000/nearest/education?long=41.017654&lat=-91.9665342&name=Nha tui o do
+
+###
+# content-type : lower case; application/json without ', breakline to request body 
+POST http://localhost:3000/
+content-type: application/json
+
+{
+    "id" : 1,
+    "name" : "MUM University",
+    "category" : "education",
+    "location" : [-91.9665342, 41.017654]
+}
+
+###
+ 
+POST http://localhost:3000/
+content-type: application/json
+
+{
+    "id" : 10,
+    "name" : "Rec Center",
+    "category" : "education",
+    "location" : [-91.9673126, 41.0170657]
+}
+###
+ 
+POST http://localhost:3000/
+content-type: application/json
+
+{
+    "id" : 20,
+    "name" : "MUM Library",
+    "category" : "education",
+    "location" : [-91.967264, 41.0162938]
+}
+###
+ 
+POST http://localhost:3000/
+content-type: application/json
+
+{
+    "id" : 2,
+    "name" : "Fairfield Public Library",
+    "category" : "education",
+    "location" : [-91.9642565, 41.0054148]
+}
+
+###
+ 
+POST http://localhost:3000/geo
+content-type: application/json
+
+{
+    "id" : 4,
+    "name" : "Optimum Wellness",
+    "category" : "education",
+    "location" : [-91.9612602, 41.0045364]
+}
+###
+ 
+POST http://localhost:3000/geo
+content-type: application/json
+
+{
+    "id" : 6,
+    "name" : "Main House 2",
+    "category" : "normal",
+    "location" : [-72.844092, 42.466234]
+}
+
+###
+
+POST http://localhost:3000/geo
+content-type: application/json
+
+{
+    "id" : 7,
+    "name" : "Nha tui o do",
+    "category" : "education",
+    "location" : [42.466234, -72.844092],
+    "note" : "should be not near by school"
+}
+###
+PUT http://localhost:3000/geo
+content-type: application/json
+
+{
+    "id" : 7,
+    "name" : "Nha tui o do",
+    "category" : "education",
+    "location" : [42.466234, -72.844092],
+    "note" : "should be not near by school"
+}

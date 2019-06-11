@@ -9,7 +9,7 @@ const port = 3000;
 app.use(connection);
 
 app.get('/getAll', async function(req, res) {
-  await databaseLecture(req).find({}).toArray(function(err, docArray) { 
+  let result = await databaseLecture(req).find({}).toArray(function(err, docArray) { 
       res.json({message : "saved", data : docArray}); 
   });
 });

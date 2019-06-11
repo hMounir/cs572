@@ -18,7 +18,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/homework_01/problem2/problem2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
+            <state relative-caret-position="360">
               <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
             </state>
           </provider>
@@ -70,7 +70,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -114,6 +113,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -194,6 +194,7 @@
       <workItem from="1559447277309" duration="121000" />
       <workItem from="1559447742918" duration="2497000" />
       <workItem from="1559518761360" duration="1044000" />
+      <workItem from="1560218557038" duration="599000" />
     </task>
     <task id="LOCAL-00001" summary="problem 1 solution">
       <created>1559000016429</created>
@@ -234,7 +235,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21520000" />
+    <option name="totallyTimeSpent" value="22119000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1017" extended-state="0" />
@@ -246,7 +247,7 @@
       <window_info id="UI Designer" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info id="npm" order="6" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="7" visible="true" weight="0.20589784" />
+      <window_info content_ui="combo" id="Project" order="7" visible="true" weight="0.2056323" />
       <window_info id="Learn" order="8" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -255,7 +256,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.25604397" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.25524476" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
@@ -365,7 +366,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/homework_01/problem2/problem2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
+        <state relative-caret-position="360">
           <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
         </state>
       </provider>

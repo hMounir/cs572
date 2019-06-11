@@ -9,31 +9,31 @@ function databaseLecture(req) {
 }
 
 router.get('/', async function(req, res) {
-  const result = await databaseLecture(req).find().toArray();
+  const result = let result = await databaseLecture(req).find().toArray();
   res.json(result);
 });
 
 router.get('/:id', async function(req, res) {
   const id = MongoClient.ObjectID(req.params.id);
-  const result = await databaseLecture(req).findOne({_id : id});
+  const result = let result = await databaseLecture(req).findOne({_id : id});
   res.json(result);
 });
 
 router.post('/', async function(req, res) {
-  const result = await databaseLecture(req).insertOne(req.body);
+  const result = let result = await databaseLecture(req).insertOne(req.body);
   res.json({message : "saved", data :result.ops} );
 });
 
 router.put('/', async function(req, res, next) {
   let query = { _id: req.body._id};
   let newvalues = { $set: {lecture: req.body.lecture, course: req.body.course } };
-  const result = await databaseLecture(req).updateOne(query.newvalues);
+  const result = let result = await databaseLecture(req).updateOne(query.newvalues);
   res.json({message : "saved", data : result}).status(201);
 });
 
 router.delete('/', async function(req, res) {
   let course = req.body;
-  await databaseLecture(req).deleteOne(course,function(err, data) { 
+  let result = await databaseLecture(req).deleteOne(course,function(err, data) { 
       res.json({message : "saved", data : data});
   });
 });

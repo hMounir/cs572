@@ -8,9 +8,8 @@ function databaseLecture(req) {
   
 // A GET to the root of a resource returns a list of that resource
 router.get('/', async function(req, res) {
-    await databaseLecture(req).find({}).toArray(function(err, docArray) { 
-        res.json({message : "saved", data : docArray}); 
-    });
+    let result = await databaseLecture(req).find({}).toArray();
+    res.json({message : "saved", data : result});;
 });
 
 module.exports = router;

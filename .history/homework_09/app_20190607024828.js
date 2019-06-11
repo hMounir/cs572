@@ -17,7 +17,7 @@ app.get('/', (req, res) => res.send('Hello App!'))
 
 //1- 
 app.get('/query1', async function(req, res) {
-  await databaseLecture(req).find({}).toArray(function(err, docArray) { 
+  let result = await databaseLecture(req).find({}).toArray(function(err, docArray) { 
       res.json({message : "saved", data : docArray}); 
   });
 });
